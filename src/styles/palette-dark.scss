@@ -1,0 +1,35 @@
+/* *************************************************************************** *
+ * * © 2020 Michael Joseph Baker (pascal@absolutelynot.moe)                  * *
+ * * Licensed under the Apache License, Version 2.0, and must be dealt with  * *
+ * * in accordance with its text: www.apache.org/licenses/LICENSE-2.0.txt    * *
+ * * ----------------------------------------------------------------------- * *
+ * * Unless required by applicable law or agreed to in writing, software     * *
+ * * distributed under the License is distributed on an "AS IS" BASIS,       * *
+ * * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied * *
+ * * See the License for the specific language governing permissions and     * *
+ * * limitations under the License.                                          * *
+ * *************************************************************************** */
+
+$standard-border-radius: 4px;
+$standard-spacing:       4px;
+
+$body-background-color: #111;
+
+$standard-accent-subtle:    #EDF;
+$standard-accent-tint:      #DBF;
+$standard-accent-highlight: #A8F;
+$standard-accent:           #84F;
+$standard-accent-contrast:  #63A;
+$standard-accent-shade:     #428;
+$standard-accent-shadow:    #204;
+
+$standard-accent-light-text: #000;
+$standard-accent-dark-text:  #AAA;
+$standard-accent-dark-text-emphasis:  #CCC;
+
+$panel-background: #222;
+$panel-content-background: #333;
+
+$button-background-inactive: $standard-accent;
+$button-background-hover:    $standard-accent-highlight;
+$button-background-active:   $standard-accent-contrast;

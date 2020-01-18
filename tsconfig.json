@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+        "moduleResolution": "node",
+        "module": "ESNext",
+        "target": "ES2019",
+        "outDir": "dist/",
+        "sourceMap": true,
+        "strict":    true,
+        "jsx":        "react",   
+        "jsxFactory": "Preact.h"
+    }
+}

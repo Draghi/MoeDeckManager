@@ -1,0 +1,30 @@
+/* *************************************************************************** *
+ * * © 2020 Michael Joseph Baker (pascal@absolutelynot.moe)                  * *
+ * * Licensed under the Apache License, Version 2.0, and must be dealt with  * *
+ * * in accordance with its text: www.apache.org/licenses/LICENSE-2.0.txt    * *
+ * * ----------------------------------------------------------------------- * *
+ * * Unless required by applicable law or agreed to in writing, software     * *
+ * * distributed under the License is distributed on an "AS IS" BASIS,       * *
+ * * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied * *
+ * * See the License for the specific language governing permissions and     * *
+ * * limitations under the License.                                          * *
+ * *************************************************************************** */
+
+* {
+    box-sizing: border-box;
+    margin:  0;
+    border:  0;
+    padding: 0;
+    overflow: auto;
+}
+
+*:focus {
+    outline: none;
+    box-shadow: inset 0px 4px 0px 0px adjust-color($standard-accent-shade, $alpha: -0.25);
+}
+
+*::-moz-focus-inner {
+    margin:  0;
+    border:  0;
+    padding: 0;
+}
