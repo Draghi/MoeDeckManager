@@ -1,0 +1,373 @@
+@charset "UTF-8";
+/* *************************************************************** **
+** * ©2020 Michael Baker (project@absolutelynot.moe) | AGPL v3.0 * **
+** *************************************************************** */
+/* *************************************************************** **
+** * ©2020 Michael Baker (project@absolutelynot.moe) | AGPL v3.0 * **
+** *************************************************************** */
+/* *************************************************************** **
+** * ©2020 Michael Baker (project@absolutelynot.moe) | AGPL v3.0 * **
+** *************************************************************** */
+*:not(li):not(ol):not(ul) {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  overflow: visible; }
+  *:not(li):not(ol):not(ul):focus, *:not(li):not(ol):not(ul) div:focus {
+    outline: none;
+    box-shadow: inset 0px 4px 0px 0px rgba(68, 34, 136, 0.75); }
+  *:not(li):not(ol):not(ul)::-moz-focus-inner {
+    margin: 0;
+    border: 0;
+    padding: 0; }
+
+/* *************************************************************** **
+** * ©2020 Michael Baker (project@absolutelynot.moe) | AGPL v3.0 * **
+** *************************************************************** */
+* {
+  line-height: 1.2; }
+
+body {
+  background-color: #111;
+  color: #BBB;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header" "content" "footer"; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #FFF; }
+
+button, input, .button, .input, textarea {
+  overflow: visible;
+  text-align: center;
+  font-size: 1em;
+  padding: 0.5em 4ch;
+  border-radius: 4px;
+  box-shadow: inset 0px 0px 0px 0px rgba(102, 51, 170, 0.5);
+  box-sizing: border-box;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  user-select: none;
+  width: max-content;
+  white-space: nowrap;
+  cursor: pointer; }
+
+input, .input, textarea {
+  user-select: all;
+  padding: 0.5em 2ch;
+  text-align: left;
+  background-color: #EDF; }
+  input:focus, .input:focus, textarea:focus {
+    background-color: white; }
+
+textarea {
+  white-space: pre-wrap;
+  min-height: 10em; }
+
+input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0; }
+
+input[type=number] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+  text-align: right;
+  background-image: url(0951357d05d9543164b0ed3366bb730f.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 1em 1em; }
+
+a {
+  color: #DBF; }
+  a:visited {
+    color: #A8F; }
+
+button, input[type=button], input[type=submit], .button {
+  background-color: #84F;
+  color: #FFF; }
+  button:visited, input[type=button]:visited, input[type=submit]:visited, .button:visited {
+    color: #FFF; }
+  button:hover, input[type=button]:hover, input[type=submit]:hover, .button:hover {
+    background-color: #A8F; }
+  button:active, input[type=button]:active, input[type=submit]:active, .button:active {
+    color: #BBB;
+    background-color: #63A; }
+
+/* *************************************************************** **
+** * ©2020 Michael Baker (project@absolutelynot.moe) | AGPL v3.0 * **
+** *************************************************************** */
+.panel {
+  background-color: #222;
+  margin: 2px;
+  padding: 4px;
+  border-radius: 4px; }
+  .panel > * {
+    border: 2px solid #222; }
+
+.panel-content, .markdown > * {
+  background-color: #333;
+  margin: 2px;
+  padding: 4px;
+  border-radius: 4px; }
+
+.group-horizontal {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  border-radius: 4px; }
+  .group-horizontal > * {
+    height: 100%; }
+  .group-horizontal > *:first-child:last-child {
+    border-radius: 4px; }
+  .group-horizontal > *:not(:first-child):not(:last-child) {
+    border-radius: 0; }
+  .group-horizontal > *:first-child:not(:last-child) {
+    border-radius: 4px 0 0 4px; }
+  .group-horizontal > *:last-child:not(:first-child) {
+    border-radius: 0 4px 4px 0; }
+
+.group-vertical {
+  display: grid;
+  grid-auto-flow: row;
+  grid-auto-rows: 1fr;
+  border-radius: 4px; }
+  .group-vertical > * {
+    width: 100%; }
+  .group-vertical input {
+    text-align: center; }
+  .group-vertical > *:first-child:last-child {
+    border-radius: 4px; }
+  .group-vertical > *:not(:first-child):not(:last-child) {
+    border-radius: 0; }
+  .group-vertical > *:first-child:not(:last-child) {
+    border-radius: 4px 4px 0 0; }
+  .group-vertical > *:last-child:not(:first-child) {
+    border-radius: 0 0 4px 4px; }
+
+/* *************************************************************** **
+** * ©2020 Michael Baker (project@absolutelynot.moe) | AGPL v3.0 * **
+** *************************************************************** */
+.dropdown {
+  display: flex;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: 0; }
+  .dropdown .dropdown-button {
+    align-self: center;
+    justify-self: center;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    text-decoration: underline;
+    background-repeat: no-repeat; }
+  .dropdown img.dropdown-button {
+    padding: 0.5em;
+    min-width: 3rem;
+    min-height: 3rem;
+    max-width: 3rem;
+    max-height: 3rem;
+    border-radius: 4px; }
+  .dropdown .content {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 4px;
+    z-index: 1000;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.75); }
+    .dropdown .content > * {
+      min-width: 100%;
+      min-height: 100%; }
+    .dropdown .content > .group-vertical > button,
+    .dropdown .content > .group-vertical > .button,
+    .dropdown .content > .group-horizontal > button,
+    .dropdown .content > .group-horizontal > .button {
+      font-weight: bold; }
+  .dropdown .content.bottom-down {
+    top: 100%;
+    left: 0%; }
+  .dropdown .content.top-up {
+    bottom: 100%;
+    left: 0%; }
+  .dropdown .content.right-down {
+    top: 0%;
+    left: 100%; }
+  .dropdown .content.right-up {
+    bottom: 0%;
+    left: 100%; }
+  .dropdown .content.left-up {
+    bottom: 0%;
+    right: 100%; }
+  .dropdown .content.left-down {
+    top: 0%;
+    right: 100%; }
+
+/* *************************************************************** **
+** * ©2020 Michael Baker (project@absolutelynot.moe) | AGPL v3.0 * **
+** *************************************************************** */
+.page-header {
+  grid-area: "content";
+  display: grid;
+  grid-template-columns: min-content 1fr; }
+  .page-header > .dropdown {
+    min-width: 2em;
+    height: 100%; }
+    .page-header > .dropdown > .button {
+      width: 100%;
+      height: 100%; }
+
+/* *************************************************************** **
+** * ©2020 Michael Baker (project@absolutelynot.moe) | AGPL v3.0 * **
+** *************************************************************** */
+.markdown ol, .markdown ul {
+  padding-left: 2ch; }
+
+.markdown .grid-1 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: auto; }
+
+.markdown .grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto; }
+
+.markdown .grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto; }
+
+.markdown .grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto; }
+
+.markdown .grid-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: auto; }
+
+.markdown .grid-6 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: auto; }
+
+.markdown .grid-7 {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-auto-rows: auto; }
+
+.markdown .grid-8 {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-auto-rows: auto; }
+
+.markdown .grid-9 {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-auto-rows: auto; }
+
+.markdown .col-1 {
+  -webkit-columns: 1;
+  -moz-columns: 1;
+  column-count: 1; }
+  .markdown .col-1 * {
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid; }
+
+.markdown .col-2 {
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  column-count: 2; }
+  .markdown .col-2 * {
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid; }
+
+.markdown .col-3 {
+  -webkit-columns: 3;
+  -moz-columns: 3;
+  column-count: 3; }
+  .markdown .col-3 * {
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid; }
+
+.markdown .col-4 {
+  -webkit-columns: 4;
+  -moz-columns: 4;
+  column-count: 4; }
+  .markdown .col-4 * {
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid; }
+
+.markdown .col-5 {
+  -webkit-columns: 5;
+  -moz-columns: 5;
+  column-count: 5; }
+  .markdown .col-5 * {
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid; }
+
+.markdown .col-6 {
+  -webkit-columns: 6;
+  -moz-columns: 6;
+  column-count: 6; }
+  .markdown .col-6 * {
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid; }
+
+.markdown .col-7 {
+  -webkit-columns: 7;
+  -moz-columns: 7;
+  column-count: 7; }
+  .markdown .col-7 * {
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid; }
+
+.markdown .col-8 {
+  -webkit-columns: 8;
+  -moz-columns: 8;
+  column-count: 8; }
+  .markdown .col-8 * {
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid; }
+
+.markdown .col-9 {
+  -webkit-columns: 9;
+  -moz-columns: 9;
+  column-count: 9; }
+  .markdown .col-9 * {
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid; }
+
+.markdown .max-width {
+  width: 100%; }
+  .markdown .max-width * {
+    width: 100%; }
+
+.markdown table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse; }
+  .markdown table td, .markdown table th {
+    border: 1px solid #204; }
+
+.markdown img {
+  max-width: 100%; }
+
+
+/*# sourceMappingURL=home~reignArc1~reignCharacters~reignRules~toolsEncrypt~._i.css.map*/
