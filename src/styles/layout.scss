@@ -1,88 +1,79 @@
-/* *************************************************************************** *
- * * © 2020 Michael Joseph Baker (pascal@absolutelynot.moe)                  * *
- * * Licensed under the Apache License, Version 2.0, and must be dealt with  * *
- * * in accordance with its text: www.apache.org/licenses/LICENSE-2.0.txt    * *
- * * ----------------------------------------------------------------------- * *
- * * Unless required by applicable law or agreed to in writing, software     * *
- * * distributed under the License is distributed on an "AS IS" BASIS,       * *
- * * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied * *
- * * See the License for the specific language governing permissions and     * *
- * * limitations under the License.                                          * *
- * *************************************************************************** */
+/* *************************************************************** **
+** * ©2020 Michael Baker (project@absolutelynot.moe) | AGPL v3.0 * **
+** *************************************************************** */
  
- .panel {
+.panel {
     background-color: $panel-background;
-    margin: 4px;
+    margin: 2px;
+    padding: 4px;
     border-radius: $standard-border-radius;
+
+    > * {
+        border: 2px solid $panel-background;
+    }
 }
 
 .panel-content {
     background-color: $panel-content-background;
-    margin: 8px;
-    padding: 8px;
+    margin: 2px;
+    padding: 4px;
     border-radius: $standard-border-radius;
 }
 
 .group-horizontal {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
     border-radius: $standard-border-radius;
-    padding: 2px;
 
-    * { 
-        flex: 1 1 0px; 
+    > * {
+        height: 100%;
     }
 
+    > *:first-child:last-child {
+        border-radius: $standard-border-radius;
+    }
+    
     > *:not(:first-child):not(:last-child) { 
         border-radius: 0; 
-        border-left: 0; 
-        border-right: 0; 
     }
 
-    :first-child { 
-        border-radius: $standard-border-radius 0px 0px $standard-border-radius; 
-        border-right: 0; 
+    > *:first-child:not(:last-child) { 
+        border-radius: $standard-border-radius 0 0 $standard-border-radius; 
     }
 
-    :last-child  {
-         border-radius: 0px $standard-border-radius $standard-border-radius 0px; 
-         border-left:  0; 
+    > *:last-child:not(:first-child)  {
+        border-radius: 0 $standard-border-radius $standard-border-radius 0; 
     }
 }
 
 .group-vertical {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-rows: 1fr;
     border-radius: $standard-border-radius;
-    padding: 2px;
-    
-    * { 
-        flex: 1 1 0; 
+
+    > * {
+        width: 100%;
     }
 
     input { 
         text-align: center; 
     }
 
+    > *:first-child:last-child {
+        border-radius: $standard-border-radius;
+    }
+
     > *:not(:first-child):not(:last-child) { 
         border-radius: 0; 
-        border-top:    0; 
-        border-bottom: 0; 
     }
 
-    :first-child:not(:last-child) { 
-        border-radius: $standard-border-radius $standard-border-radius 0 0; 
-        border-bottom: 0; 
+    > *:first-child:not(:last-child) { 
+        border-radius: $standard-border-radius $standard-border-radius 0 0 ; 
     }
 
-    :last-child:not(:first-child) { 
-        border-radius: 0 0 $standard-border-radius $standard-border-radius; 
-        border-top:    0;
+    > *:last-child:not(:first-child)  {
+         border-radius: 0 0 $standard-border-radius $standard-border-radius; 
     }
 }

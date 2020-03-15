@@ -1,16 +1,11 @@
-/* *************************************************************************** *
- * * © 2020 Michael Joseph Baker (pascalabsolutelynot.moe)                   * *
- * * Licensed under the Apache License, Version 2.0, and must be dealt with  * *
- * * in accordance with its text: www.apache.org/licenses/LICENSE-2.0.txt    * *
- * * ----------------------------------------------------------------------- * *
- * * Unless required by applicable law or agreed to in writing, software     * *
- * * distributed under the License is distributed on an "AS IS" BASIS,       * *
- * * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied * *
- * * See the License for the specific language governing permissions and     * *
- * * limitations under the License.                                          * *
- * *************************************************************************** */
+/* *************************************************************** **
+** * ©2020 Michael Baker (project@absolutelynot.moe) | AGPL v3.0 * **
+** *************************************************************** */
 
  @import "palette-dark";
  @import "global";
  @import "theme";
  @import "layout";
+ @import "dropdown";
+ @import "page-header";
+ @import "markdown";

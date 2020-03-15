@@ -1,37 +1,53 @@
-/* *************************************************************************** *
- * * © 2020 Michael Joseph Baker (pascal@absolutelynot.moe)                  * *
- * * Licensed under the Apache License, Version 2.0, and must be dealt with  * *
- * * in accordance with its text: www.apache.org/licenses/LICENSE-2.0.txt    * *
- * * ----------------------------------------------------------------------- * *
- * * Unless required by applicable law or agreed to in writing, software     * *
- * * distributed under the License is distributed on an "AS IS" BASIS,       * *
- * * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied * *
- * * See the License for the specific language governing permissions and     * *
- * * limitations under the License.                                          * *
- * *************************************************************************** */
+/* *************************************************************** **
+** * ©2020 Michael Baker (project@absolutelynot.moe) | AGPL v3.0 * **
+** *************************************************************** */
+
+* {
+    line-height: 1.2;
+}
 
 body {
     background-color: $body-background-color;
     color: $standard-accent-dark-text;
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header"
+                         "content"
+                         "footer";
 }
 
 h1, h2, h3, h4, h5, h6 {
     color: $standard-accent-dark-text-emphasis
 }
 
-button, input, .button, .input {
+button, input, .button, .input, textarea {
     overflow: visible;
-    padding: 0.5em 2ch;
+    text-align: center;
+    font-size: 1em;
+    padding: 0.5em 4ch;
     border-radius: $standard-border-radius;
     box-shadow: inset 0px 0px 0px 0px adjust-color($standard-accent-contrast, $alpha: -0.5);
     box-sizing: border-box;
-    width: 10ch;
-    transition: 0.3s all;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    user-select: none;
+    width: max-content;
+    white-space: nowrap;
+    cursor: pointer;
 }
 
-input, .input {
+input, .input, textarea {
+    user-select: all;
+    padding: 0.5em 2ch;
+    text-align: left;
     background-color: $standard-accent-subtle;
     &:focus { background-color: white; }
+}
+
+textarea {
+    white-space: pre-wrap;
+    min-height: 10em;
 }
 
 input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button {
@@ -54,9 +70,20 @@ input[type=number] {
     background-size: 1em 1em;
 }
 
-button, input[type=button], .button {
+a {
+    color: $standard-accent-tint;
+    &:visited {
+        color: $standard-accent-highlight;
+    }
+}
+
+button, input[type=button], input[type=submit], .button {
     background-color: $button-background-inactive;
-    color: $standard-accent-light-text;
+    color: $standard-accent-dark-text-emphasis;
+
+    &:visited {
+        color: $standard-accent-dark-text-emphasis;
+    }
 
     &:hover {
         background-color: $button-background-hover;
