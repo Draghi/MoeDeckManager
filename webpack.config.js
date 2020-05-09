@@ -7,6 +7,8 @@ const entryPoints = {
     home:         {entry:"index",               title: "NvM Home"   },
 
     toolsEncrypt: {entry:"admin/encrypt/index", title: "NvM Encrypt"},
+
+    oasisIndex: {entry: "oasis/index", title: "Oasis - Home"},
     
     reignArc1:       {entry: "admin/reign/arc1",         title: "RoS - Arc 1"     },
     reignCharacters: {entry: "reignofstrahd/characters", title: "RoS - Characters"},

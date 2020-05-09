@@ -15,7 +15,7 @@ There's not much here yet, and it's a mess of a codebase, but make yourself at h
 
 Preact.render([
         <PageHeader title="Not Very Moe"/>,
-        <div class="panel"><Markdown source={html}/></div>,
+        <div class="page-content panel"><Markdown source={html}/></div>,
         <PageFooter/>
     ],
     document.body

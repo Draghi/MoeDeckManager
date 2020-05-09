@@ -79,7 +79,7 @@ Touch spells can be case and held using your concentration until they're use or 
 
 Preact.render([
         <PageHeader title="Reign of Strahd - Homebrew Rules"/>,
-        <div class="panel"><Markdown source={markdownSource}/></div>,
+        <div class="page-content panel"><Markdown source={markdownSource}/></div>,
         <PageFooter/>
     ],
     document.body

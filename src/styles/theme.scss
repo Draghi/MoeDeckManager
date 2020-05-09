@@ -11,11 +11,11 @@ body {
     color: $standard-accent-dark-text;
 
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr auto 1fr;
     grid-template-rows: auto 1fr auto;
-    grid-template-areas: "header"
-                         "content"
-                         "footer";
+    grid-template-areas: "header header header" ". content ." "footer footer footer";
+
+    min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6 {

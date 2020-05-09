@@ -35,6 +35,7 @@ export class Markdown extends PureComponent<MarkdownProps> {
                 Marked(source, {
                     gfm: true,
                     headerIds: true,
+                    
                     headerPrefix: "header-",
                 })
             )

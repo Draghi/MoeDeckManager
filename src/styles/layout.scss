@@ -5,8 +5,13 @@
 .panel {
     background-color: $panel-background;
     margin: 2px;
-    padding: 4px;
+    padding: 2px;
     border-radius: $standard-border-radius;
+
+    &.page-content {
+        min-width: 96ch;
+        max-width: 96ch;
+    }
 
     > * {
         border: 2px solid $panel-background;
@@ -15,8 +20,8 @@
 
 .panel-content {
     background-color: $panel-content-background;
-    margin: 2px;
-    padding: 4px;
+    margin: 6px;
+    padding: 6px;
     border-radius: $standard-border-radius;
 }
 

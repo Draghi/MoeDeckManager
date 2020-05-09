@@ -29,7 +29,7 @@ export class EncryptedPage extends PureComponent<EncryptedPageProps, EncryptedPa
         const { source } = this.props;
         const { password, decodeSuccess } = this.state;
 
-        return <div className="panel">
+        return <div className="page-content panel">
             {decodeSuccess ? null :
                 <div className="panel-content">
                 <h1 style={{display:"inline", marginRight:"1ch"}}>Decrypt</h1>

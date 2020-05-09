@@ -2,14 +2,53 @@
 ** * ©2020 Michael Baker (project@absolutelynot.moe) | AGPL v3.0 * **
 ** *************************************************************** */
 
+$markdown-indent-size: 4ch;
+
 .markdown {
 
-    > * {
+    > *:not(section) {
         @extend .panel-content;
     }
 
+    section > *:not(section) {
+        @extend .panel-content;
+    }
+
+    h1 + section, h2 + section, h3 + section, 
+    h4 + section, h5 + section, h6 + section  { 
+        margin-left: $markdown-indent-size; 
+    }
+
+    p {
+        text-align: justify;
+    }
+
     ol, ul {
-        padding-left: 2ch;
+        margin-left: $markdown-indent-size !important;
+        padding-left: $markdown-indent-size !important;
+    }
+
+    ol > li {
+        margin: 0;
+        padding: 0 0 0 0;
+        text-indent: 1ch-$markdown-indent-size;
+        list-style-type: none;
+        counter-increment: item;
+        font-style: italic;
+    }
+
+    ol > li:not(:first-child) {
+        margin-top: 0.5em;
+    }
+
+    ol > li::before {
+        display: inline-block;
+        width: 1em;
+        padding-right: 0.5em;
+        font-weight: bold;
+        text-align: right;
+        color: $standard-accent-highlight;
+        content: counter(item) ".";
     }
 
     @mixin grid-x($count) {

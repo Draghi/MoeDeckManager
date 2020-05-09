@@ -6,9 +6,9 @@
         "outDir": "dist/",
         "sourceMap": true,
         "strict":    true,
+        "baseUrl": "./src/",
+        "allowSyntheticDefaultImports": true,
         "jsx":        "react",   
         "jsxFactory": "Preact.h",
-        "baseUrl": "./src/",
-        "allowSyntheticDefaultImports": true
     }
 }

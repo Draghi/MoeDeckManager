@@ -38,7 +38,7 @@ class EncryptContent extends PureComponent<EncryptContentProps, EncryptContentSt
     }
 
     render() {
-        return <div class="panel">
+        return <div class="page-content panel">
             <h1 class="panel-content">Encrypt</h1>
 
             <div class="panel-content">

@@ -391,7 +391,7 @@ All characters get a bonus feat at 1st level.
 
 Preact.render([
         <PageHeader title="Reign of Strahd - Character Options"/>,
-        <div class="panel"><Markdown source={markdownSource}/></div>,
+        <div class="page-content panel"><Markdown source={markdownSource}/></div>,
         <PageFooter/>
     ],
     document.body

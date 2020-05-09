@@ -3,7 +3,7 @@
 ** *************************************************************** */
 
 .page-header {
-    grid-area: "content";
+    grid-area: header;
 
     display: grid;
     grid-template-columns: min-content 1fr;
@@ -17,4 +17,12 @@
             height: 100%;
         }
     }
+}
+
+.page-content {
+    grid-area: content;
+}
+
+.page-footer {
+    grid-area: footer;
 }

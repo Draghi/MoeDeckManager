@@ -17,7 +17,10 @@ export function PageHeader(props: PageHeaderProps) {
                 <Dropdown text="ReignOfStrahd" style={{borderTop:"2px solid black"}}>
                     <a href="/reignofstrahd/characters.html" class="button">Character Options</a>
                     <a href="/reignofstrahd/rules.html"      class="button">Homebrew Rules</a>
-                </Dropdown>            
+                </Dropdown>
+                <Dropdown text="Oasis">
+                    <a href="/oasis" class="button">Index</a>
+                </Dropdown>
                 <Dropdown text="Admin" style={{borderTop:"2px solid black"}}>
                     <a href="/admin/encrypt" class="button">Encrypt</a>
                     <Dropdown text="ReignOfStrahd">
@@ -32,7 +35,7 @@ export function PageHeader(props: PageHeaderProps) {
 }
 
 export function PageFooter(props: {}) {
-    return <div class="panel">
+    return <div class="page-footer panel">
         <CopyrightNotice 
             published={2020} 
             author={WebsiteInformation.author} 
