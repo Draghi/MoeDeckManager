@@ -43,7 +43,7 @@ class EncryptContent extends scripts_components_PureComponent__WEBPACK_IMPORTED_
         }
     }
     render() {
-        return preact__WEBPACK_IMPORTED_MODULE_1__["h"]("div", { class: "panel" },
+        return preact__WEBPACK_IMPORTED_MODULE_1__["h"]("div", { class: "page-content panel" },
             preact__WEBPACK_IMPORTED_MODULE_1__["h"]("h1", { class: "panel-content" }, "Encrypt"),
             preact__WEBPACK_IMPORTED_MODULE_1__["h"]("div", { class: "panel-content" },
                 preact__WEBPACK_IMPORTED_MODULE_1__["h"]("div", { style: { width: "100%" } },
@@ -66,5 +66,5 @@ preact__WEBPACK_IMPORTED_MODULE_1__["render"]([
 
 /***/ })
 
-},[["./src/pages/admin/encrypt/index.tsx","runtime","vendors~home~reignArc1~reignCharacters~reignRules~toolsEncrypt~._node_modules_a","home~reignArc1~reignCharacters~reignRules~toolsEncrypt~._i"]]]);
-//# sourceMappingURL=toolsEncrypt~._src_pages_admin_encrypt_index.tsx~91727d01_d61d14136605dba516db.js.map
+},[["./src/pages/admin/encrypt/index.tsx","runtime","vendors~home~oasisIndex~reignArc1~reignCharacters~reignRules~toolsEncrypt~._node_modules_a","home~oasisIndex~reignArc1~reignCharacters~reignRules~toolsEncrypt~._i"]]]);
+//# sourceMappingURL=toolsEncrypt~._src_pages_admin_encrypt_index.tsx~91727d01_187988910ac7a4f39607.js.map

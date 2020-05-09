@@ -28,7 +28,7 @@ There's not much here yet, and it's a mess of a codebase, but make yourself at h
 `;
 preact__WEBPACK_IMPORTED_MODULE_1__["render"]([
     preact__WEBPACK_IMPORTED_MODULE_1__["h"](_shared__WEBPACK_IMPORTED_MODULE_3__["PageHeader"], { title: "Not Very Moe" }),
-    preact__WEBPACK_IMPORTED_MODULE_1__["h"]("div", { class: "panel" },
+    preact__WEBPACK_IMPORTED_MODULE_1__["h"]("div", { class: "page-content panel" },
         preact__WEBPACK_IMPORTED_MODULE_1__["h"](scripts_components_Markdown__WEBPACK_IMPORTED_MODULE_2__["Markdown"], { source: html })),
     preact__WEBPACK_IMPORTED_MODULE_1__["h"](_shared__WEBPACK_IMPORTED_MODULE_3__["PageFooter"], null)
 ], document.body);
@@ -36,5 +36,5 @@ preact__WEBPACK_IMPORTED_MODULE_1__["render"]([
 
 /***/ })
 
-},[["./src/pages/index.tsx","runtime","vendors~home~reignArc1~reignCharacters~reignRules~toolsEncrypt~._node_modules_a","vendors~home~reignArc1~reignCharacters~reignRules~._node_modules_d","home~reignArc1~reignCharacters~reignRules~toolsEncrypt~._i","home~reignArc1~reignCharacters~reignRules~._src_scripts_components_Markdown.tsx~bb65f013"]]]);
-//# sourceMappingURL=home~._src_pages_index.tsx~3937f4fe_865b3f1411a8ba8b50a2.js.map
+},[["./src/pages/index.tsx","runtime","vendors~home~oasisIndex~reignArc1~reignCharacters~reignRules~toolsEncrypt~._node_modules_a","vendors~home~oasisIndex~reignArc1~reignCharacters~reignRules~._node_modules_d","home~oasisIndex~reignArc1~reignCharacters~reignRules~toolsEncrypt~._i","home~oasisIndex~reignArc1~reignCharacters~reignRules~._src_scripts_components_Markdown.tsx~bb65f013"]]]);
+//# sourceMappingURL=home~._src_pages_index.tsx~3937f4fe_86cb9efe2610cc3e3611.js.map

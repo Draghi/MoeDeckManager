@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["home~reignArc1~reignCharacters~reignRules~toolsEncrypt~._i"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["home~oasisIndex~reignArc1~reignCharacters~reignRules~toolsEncrypt~._i"],{
 
 /***/ "./src/pages/shared.tsx":
 /*!******************************!*\
@@ -28,6 +28,8 @@ function PageHeader(props) {
             preact__WEBPACK_IMPORTED_MODULE_0__["h"](scripts_components_Dropdown__WEBPACK_IMPORTED_MODULE_2__["default"], { text: "ReignOfStrahd", style: { borderTop: "2px solid black" } },
                 preact__WEBPACK_IMPORTED_MODULE_0__["h"]("a", { href: "/reignofstrahd/characters.html", class: "button" }, "Character Options"),
                 preact__WEBPACK_IMPORTED_MODULE_0__["h"]("a", { href: "/reignofstrahd/rules.html", class: "button" }, "Homebrew Rules")),
+            preact__WEBPACK_IMPORTED_MODULE_0__["h"](scripts_components_Dropdown__WEBPACK_IMPORTED_MODULE_2__["default"], { text: "Oasis" },
+                preact__WEBPACK_IMPORTED_MODULE_0__["h"]("a", { href: "/oasis", class: "button" }, "Index")),
             preact__WEBPACK_IMPORTED_MODULE_0__["h"](scripts_components_Dropdown__WEBPACK_IMPORTED_MODULE_2__["default"], { text: "Admin", style: { borderTop: "2px solid black" } },
                 preact__WEBPACK_IMPORTED_MODULE_0__["h"]("a", { href: "/admin/encrypt", class: "button" }, "Encrypt"),
                 preact__WEBPACK_IMPORTED_MODULE_0__["h"](scripts_components_Dropdown__WEBPACK_IMPORTED_MODULE_2__["default"], { text: "ReignOfStrahd" },
@@ -39,7 +41,7 @@ function PageHeader(props) {
                 " ")));
 }
 function PageFooter(props) {
-    return preact__WEBPACK_IMPORTED_MODULE_0__["h"]("div", { class: "panel" },
+    return preact__WEBPACK_IMPORTED_MODULE_0__["h"]("div", { class: "page-footer panel" },
         preact__WEBPACK_IMPORTED_MODULE_0__["h"](scripts_components_Copyright__WEBPACK_IMPORTED_MODULE_1__["CopyrightNotice"], { published: 2020, author: WebsiteInformation.author, licence: WebsiteInformation.licence }));
 }
 const WebsiteInformation = {
@@ -307,6 +309,28 @@ function shallowEqualsArray(arrA, arrB) {
 /***/ }),
 
 /***/ 2:
+/*!**********************!*\
+  !*** util (ignored) ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 3:
+/*!**********************!*\
+  !*** util (ignored) ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 4:
 /*!************************!*\
   !*** buffer (ignored) ***!
   \************************/
@@ -317,7 +341,7 @@ function shallowEqualsArray(arrA, arrB) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 5:
 /*!************************!*\
   !*** crypto (ignored) ***!
   \************************/
@@ -329,4 +353,4 @@ function shallowEqualsArray(arrA, arrB) {
 /***/ })
 
 }]);
-//# sourceMappingURL=home~reignArc1~reignCharacters~reignRules~toolsEncrypt~._i_cf66a4764453f8354872.js.map
+//# sourceMappingURL=home~oasisIndex~reignArc1~reignCharacters~reignRules~toolsEncrypt~._i_dc5c0bc9738032da2668.js.map

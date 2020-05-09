@@ -75,7 +75,7 @@ class EncryptedPage extends _PureComponent__WEBPACK_IMPORTED_MODULE_1__["PureCom
     render() {
         const { source } = this.props;
         const { password, decodeSuccess } = this.state;
-        return preact__WEBPACK_IMPORTED_MODULE_0__["h"]("div", { className: "panel" },
+        return preact__WEBPACK_IMPORTED_MODULE_0__["h"]("div", { className: "page-content panel" },
             decodeSuccess ? null :
                 preact__WEBPACK_IMPORTED_MODULE_0__["h"]("div", { className: "panel-content" },
                     preact__WEBPACK_IMPORTED_MODULE_0__["h"]("h1", { style: { display: "inline", marginRight: "1ch" } }, "Decrypt"),
@@ -90,5 +90,5 @@ class EncryptedPage extends _PureComponent__WEBPACK_IMPORTED_MODULE_1__["PureCom
 
 /***/ })
 
-},[["./src/pages/admin/reign/arc1.tsx","runtime","vendors~home~reignArc1~reignCharacters~reignRules~toolsEncrypt~._node_modules_a","vendors~home~reignArc1~reignCharacters~reignRules~._node_modules_d","home~reignArc1~reignCharacters~reignRules~toolsEncrypt~._i","home~reignArc1~reignCharacters~reignRules~._src_scripts_components_Markdown.tsx~bb65f013"]]]);
-//# sourceMappingURL=reignArc1~._src_p_59c0354bc6c15f4d5be1.js.map
+},[["./src/pages/admin/reign/arc1.tsx","runtime","vendors~home~oasisIndex~reignArc1~reignCharacters~reignRules~toolsEncrypt~._node_modules_a","vendors~home~oasisIndex~reignArc1~reignCharacters~reignRules~._node_modules_d","home~oasisIndex~reignArc1~reignCharacters~reignRules~toolsEncrypt~._i","home~oasisIndex~reignArc1~reignCharacters~reignRules~._src_scripts_components_Markdown.tsx~bb65f013"]]]);
+//# sourceMappingURL=reignArc1~._src_p_19c9048984d0659737be.js.map

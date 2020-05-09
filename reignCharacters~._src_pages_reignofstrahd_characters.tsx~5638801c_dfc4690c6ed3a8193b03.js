@@ -404,7 +404,7 @@ All characters get a bonus feat at 1st level.
 `;
 preact__WEBPACK_IMPORTED_MODULE_1__["render"]([
     preact__WEBPACK_IMPORTED_MODULE_1__["h"](pages_shared__WEBPACK_IMPORTED_MODULE_3__["PageHeader"], { title: "Reign of Strahd - Character Options" }),
-    preact__WEBPACK_IMPORTED_MODULE_1__["h"]("div", { class: "panel" },
+    preact__WEBPACK_IMPORTED_MODULE_1__["h"]("div", { class: "page-content panel" },
         preact__WEBPACK_IMPORTED_MODULE_1__["h"](scripts_components_Markdown__WEBPACK_IMPORTED_MODULE_2__["Markdown"], { source: markdownSource })),
     preact__WEBPACK_IMPORTED_MODULE_1__["h"](pages_shared__WEBPACK_IMPORTED_MODULE_3__["PageFooter"], null)
 ], document.body);
@@ -412,5 +412,5 @@ preact__WEBPACK_IMPORTED_MODULE_1__["render"]([
 
 /***/ })
 
-},[["./src/pages/reignofstrahd/characters.tsx","runtime","vendors~home~reignArc1~reignCharacters~reignRules~toolsEncrypt~._node_modules_a","vendors~home~reignArc1~reignCharacters~reignRules~._node_modules_d","home~reignArc1~reignCharacters~reignRules~toolsEncrypt~._i","home~reignArc1~reignCharacters~reignRules~._src_scripts_components_Markdown.tsx~bb65f013"]]]);
-//# sourceMappingURL=reignCharacters~._src_pages_reignofstrahd_characters.tsx~5638801c_b64a7d27fa3e4c517ddc.js.map
+},[["./src/pages/reignofstrahd/characters.tsx","runtime","vendors~home~oasisIndex~reignArc1~reignCharacters~reignRules~toolsEncrypt~._node_modules_a","vendors~home~oasisIndex~reignArc1~reignCharacters~reignRules~._node_modules_d","home~oasisIndex~reignArc1~reignCharacters~reignRules~toolsEncrypt~._i","home~oasisIndex~reignArc1~reignCharacters~reignRules~._src_scripts_components_Markdown.tsx~bb65f013"]]]);
+//# sourceMappingURL=reignCharacters~._src_pages_reignofstrahd_characters.tsx~5638801c_dfc4690c6ed3a8193b03.js.map

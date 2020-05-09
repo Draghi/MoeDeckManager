@@ -92,7 +92,7 @@ Touch spells can be case and held using your concentration until they're use or 
 `;
 preact__WEBPACK_IMPORTED_MODULE_1__["render"]([
     preact__WEBPACK_IMPORTED_MODULE_1__["h"](pages_shared__WEBPACK_IMPORTED_MODULE_3__["PageHeader"], { title: "Reign of Strahd - Homebrew Rules" }),
-    preact__WEBPACK_IMPORTED_MODULE_1__["h"]("div", { class: "panel" },
+    preact__WEBPACK_IMPORTED_MODULE_1__["h"]("div", { class: "page-content panel" },
         preact__WEBPACK_IMPORTED_MODULE_1__["h"](scripts_components_Markdown__WEBPACK_IMPORTED_MODULE_2__["Markdown"], { source: markdownSource })),
     preact__WEBPACK_IMPORTED_MODULE_1__["h"](pages_shared__WEBPACK_IMPORTED_MODULE_3__["PageFooter"], null)
 ], document.body);
@@ -100,5 +100,5 @@ preact__WEBPACK_IMPORTED_MODULE_1__["render"]([
 
 /***/ })
 
-},[["./src/pages/reignofstrahd/rules.tsx","runtime","vendors~home~reignArc1~reignCharacters~reignRules~toolsEncrypt~._node_modules_a","vendors~home~reignArc1~reignCharacters~reignRules~._node_modules_d","home~reignArc1~reignCharacters~reignRules~toolsEncrypt~._i","home~reignArc1~reignCharacters~reignRules~._src_scripts_components_Markdown.tsx~bb65f013"]]]);
-//# sourceMappingURL=reignRules~._src_pages_reignofstrahd_rules.tsx~e380fdb8_faf3bcdd2e4c07a2382c.js.map
+},[["./src/pages/reignofstrahd/rules.tsx","runtime","vendors~home~oasisIndex~reignArc1~reignCharacters~reignRules~toolsEncrypt~._node_modules_a","vendors~home~oasisIndex~reignArc1~reignCharacters~reignRules~._node_modules_d","home~oasisIndex~reignArc1~reignCharacters~reignRules~toolsEncrypt~._i","home~oasisIndex~reignArc1~reignCharacters~reignRules~._src_scripts_components_Markdown.tsx~bb65f013"]]]);
+//# sourceMappingURL=reignRules~._src_pages_reignofstrahd_rules.tsx~e380fdb8_2e728dbb12964b02d8d3.js.map

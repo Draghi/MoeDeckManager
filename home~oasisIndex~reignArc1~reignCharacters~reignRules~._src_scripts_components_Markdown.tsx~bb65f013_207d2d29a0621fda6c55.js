@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["home~reignArc1~reignCharacters~reignRules~._src_scripts_components_Markdown.tsx~bb65f013"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["home~oasisIndex~reignArc1~reignCharacters~reignRules~._src_scripts_components_Markdown.tsx~bb65f013"],{
 
 /***/ "./src/scripts/components/Markdown.tsx":
 /*!*********************************************!*\
@@ -54,4 +54,4 @@ class Markdown extends _PureComponent__WEBPACK_IMPORTED_MODULE_1__["PureComponen
 /***/ })
 
 }]);
-//# sourceMappingURL=home~reignArc1~reignCharacters~reignRules~._src_scripts_components_Markdown.tsx~bb65f013_2fbadd54e72159c42edf.js.map
+//# sourceMappingURL=home~oasisIndex~reignArc1~reignCharacters~reignRules~._src_scripts_components_Markdown.tsx~bb65f013_207d2d29a0621fda6c55.js.map
